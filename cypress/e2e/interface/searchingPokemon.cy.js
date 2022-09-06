@@ -39,6 +39,7 @@ describe('Searching Pokemon', () => {
     cy.get('.pokedex-filter-weight-list > .middle > .icon').click()
     cy.get('#maxRangeBox').type('{selectall}{backspace}' +'100')
     cy.get('.filter-action > #search').click()
+    cy.get('body > div.container.pokedex > section.section.pokedex-results.overflow-visible > ul > li > figure').should('have.length', 1)
     cy.get('body > div.container.pokedex > section.section.pokedex-results.overflow-visible > ul > li > div > h5').contains('Charizard')
 
   })
