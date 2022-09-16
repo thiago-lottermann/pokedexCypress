@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "cypress:run": "cypress run",
-    "cypress:open":"cypress open"
+    "cypress:open": "cypress open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^10.6.0"
+    "cypress": "^10.8.0"
   }
 }
