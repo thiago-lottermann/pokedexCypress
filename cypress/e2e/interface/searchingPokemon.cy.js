@@ -11,7 +11,7 @@ describe('Searching Pokemon', () => {
   })
 
 
-  it('Deve pesquisar pokemon utilizando o nome e acessar os detalhes', () => {
+  it('Simple search', () => {
     cy.visit(baseUrl)
     cy.wait(loading)
     cy.searchPokemon('Snorlax')
@@ -20,7 +20,7 @@ describe('Searching Pokemon', () => {
 
   })
 
-  it('Deve pesquisar pokemon inexistente', () => {
+  it('Search with error', () => {
     cy.visit(baseUrl)
     cy.wait(loading)
     cy.searchPokemon('Pokemon inexistente')
@@ -28,8 +28,7 @@ describe('Searching Pokemon', () => {
 
   })
 
-
-  it('Deve utilizar busca avançada para pesquisar o pokemon', () => {
+  it('Advanced search', () => {
     cy.visit(baseUrl)
     cy.wait(loading)
     cy.get('body > div.container.pokedex > section.section.pokedex-filter-toggle > div > span').click()

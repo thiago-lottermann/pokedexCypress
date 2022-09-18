@@ -3,7 +3,7 @@
 
 describe("Searching Pokemon with API ", () => {
 
-    it('Deve pesquisar pokemon utilizando o nome', () => {
+    it('Simple search with name', () => {
 
         cy.request({
             method: 'GET',
